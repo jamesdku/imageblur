@@ -1,5 +1,5 @@
 class Image
-  def initialize(image)
+  def initialize image
     @image = image
   end
 
