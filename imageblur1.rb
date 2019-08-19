@@ -1,11 +1,15 @@
-class Image
-  def initialize image
-    @image = image
+class Image 
+
+  def initialize(array_of_arrays)
+    @array_of_arrays = array_of_arrays
   end
 
-  def output_image
-    @image.each { |n| puts n.join }
+  def output_image()
+    for array in @array_of_arrays do
+      puts(array.join(""))
+    end
   end
+end
 
 image = Image.new([
   [0, 0, 0, 0],
@@ -15,4 +19,3 @@ image = Image.new([
 ])
 image.output_image
 
-end
